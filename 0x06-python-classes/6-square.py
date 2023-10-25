@@ -20,9 +20,9 @@ class Square:
             raise ValueError('size must be >= 0')
 
         self.__size = size
-        self.__position = position
+        self.position = position
 
-    def __string__(self):
+    def __str__(self):
         self.my_print()
 
     @property
