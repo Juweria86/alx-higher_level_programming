@@ -3,7 +3,8 @@
 
 
 class Square:
-    """ empty class"""
+    """ class that defines  a square"""
+
     def __init__(self, size=0):
         """initializes a claass
         size: size of square
