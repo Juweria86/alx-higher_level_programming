@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""This module defines rectangle"""
-Rectangle = __import__('9-rectangle').Rectangle
+"""Inheris from baseGeometry"""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
@@ -13,4 +13,3 @@ class Rectangle(BaseGeometry):
         self.__width = width
         self.integer_validator("height", height)
         self.__height = height
-
