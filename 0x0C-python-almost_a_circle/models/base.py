@@ -61,6 +61,7 @@ class Base:
         else:
             return json.loads(json_string)
 
+    @classmethod
     def create(cls, **dictionary):
         """Return a class instantied from a dictionary of attributes.
         Args:
