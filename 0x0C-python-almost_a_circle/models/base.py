@@ -74,6 +74,7 @@ class Base:
                 new = cls(1)
             new.update(**dictionary)
             return new
+
     @classmethod
     def load_from_file(cls):
         filename = cls.__name__ + ".json"
@@ -83,4 +84,3 @@ class Base:
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []
-
