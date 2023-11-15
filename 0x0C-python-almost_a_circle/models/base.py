@@ -85,6 +85,7 @@ class Base:
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []
+
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Write the CSV serialization of a list of objects to a file.
