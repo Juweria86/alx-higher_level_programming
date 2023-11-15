@@ -40,7 +40,7 @@ class Square(Rectangle):
             - 2nd argument represents size attribute
             - 3rd argument represents x attribute
             - 4th argument represents y attribute
-         **kwargs (dict): New key/value pairs of attributes. 
+        **kwargs (dict): New key/value pairs of attributes.
         """
         if args and len(args) != 0:
             a = 0
@@ -52,12 +52,11 @@ class Square(Rectangle):
                         self.id = arg
                 elif a == 1:
                     self.size = arg
-                elif a ==2:
+                elif a == 2:
                     self.x = arg
                 elif a == 3:
                     self.y = arg
                 a += 1
-        
         elif kwargs and len(kwargs) != 0:
             for k, v in kwargs.items():
                 if k == "id":
